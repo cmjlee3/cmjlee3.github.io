@@ -1,12 +1,14 @@
 body{
-  background-image: url("sf.jpg");
+  background-image: url("leaves.jpg");
   background-size: cover;
   padding-top: 40px;
+
+  /*position: fixed;*/
 
 
 }
 header{
-  background: white;
+  background: #FAFAFA;
   opacity: 0.8;
   height: 100px;
   position: fixed;
@@ -14,6 +16,10 @@ header{
   transition: top 0.2s ease-in-out;
   width: 100%;
   margin-left: -10px;
+ /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;*/
 }
 .nav-up {
     top: -40px;
@@ -27,7 +33,8 @@ header{
 .buttonCont{
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 400px;
+  /*position: fixed*/
 }
 .button{
   background-color:rgba(0,0,0,0);
@@ -48,13 +55,60 @@ header{
 }
 .nav-down{
   text-align: center;
+  position: fixed;
 
 }
 p{
-  display: inline-block;
+  display: block;
+  float: left;
   padding: 25px;
 
 }
+.button {
+  moz-transition: all 1s ease-in-out;
+  o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  webkit-transition: all 1s ease-in-out;
+}
 
+.aboutMe {
+    width: 95%;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 35px;
+  background-color: #FAFAFA;
+  color: white;
+  opacity: .8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.section {
+  width: 95%;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 35px;
+  background-color: #FAFAFA;
+  color: white;
+  opacity: .8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.section2 {
+  width: 95%;
+  height: 400px;
+  margin-top: 30px;
+  margin-left: 35px;
+  background-color: #FAFAFA;
+  color: white;
+  opacity: .8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

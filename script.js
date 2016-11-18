@@ -40,5 +40,13 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
+// $window = $(window);
+// $(window).scroll(function(){
+
+// if($window.scrollTop() > 200)
+//     $(".button").hide('active');
+// else
+//     $(".button").show('active');
+// });
 
 });
