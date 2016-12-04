@@ -1,52 +1,77 @@
-document.addEventListener('DOMContentLoaded', function(event) {
-console.log('linked');
+$(document).ready(function() {
 
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+var $video  = $('video'),
+    $window = $(window);
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
+$(window).resize(function(){
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
+    var height = $window.height();
+    $video.css('height', height);
 
-function hasScrolled() {
-    var st = $(this).scrollTop();
+    var videoWidth = $video.width(),
+        windowWidth = $window.width(),
+    marginLeftAdjust =   (windowWidth - videoWidth) / 2;
 
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
+    $video.css({
+        'height': height,
+        'marginLeft' : marginLeftAdjust
+    });
+}).resize();
 
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
+let text = "";
+let count = 0;
+let maxspeed = 300;
 
-    lastScrollTop = st;
+function typeit(effect) {
+  text = effect;
+  type();
 }
 
-// $window = $(window);
-// $(window).scroll(function(){
+function character(start, end, text) {
+  return text.substring(start, end);
+}
 
-// if($window.scrollTop() > 200)
-//     $(".button").hide('active');
-// else
-//     $(".button").show('active');
-// });
+function type() {
+  let random = Math.floor(Math.random() * maxspeed);
+  setTimeout(type, random);
+  $('#animated_words').append(character(count, count+1, text));
+  count++;
+}
+
+typeit("lsacnsalcnlaskcn.. just kidding. hi.");
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 10) {
+      $('header').addClass('nav_bar');
+  } else {
+      $('header').removeClass('nav_bar');
+  }
+});
+
+
+$('.mobile-toggle').click(function() {
+  if ($('header').hasClass('open-nav')) {
+      $('header').removeClass('open-nav');
+  } else {
+      $('header').addClass('open-nav');
+  }
+});
+
+$('.main_h li a').click(function() {
+  if ($('header').hasClass('open-nav')) {
+      $('.navigation').removeClass('open-nav');
+      $('header').removeClass('open-nav');
+  }
+});
+
+$('nav a').click(function(event) {
+  let id = $(this).attr("href");
+   let offset = 70;
+  let target = $(id).offset().top - offset;
+  $('html, body').animate({
+      scrollTop: target
+  }, 500);
+  event.preventDefault();
+});
 
 });
