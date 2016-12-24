@@ -1,23 +1,5 @@
 $(document).ready(function() {
 
-var $video  = $('video'),
-    $window = $(window);
-
-$(window).resize(function(){
-
-    var height = $window.height();
-    $video.css('height', height);
-
-    var videoWidth = $video.width(),
-        windowWidth = $window.width(),
-    marginLeftAdjust =   (windowWidth - videoWidth) / 2;
-
-    $video.css({
-        'height': height,
-        'marginLeft' : marginLeftAdjust
-    });
-}).resize();
-
 let text = "";
 let count = 0;
 let maxspeed = 300;
@@ -38,10 +20,11 @@ function type() {
   count++;
 }
 
-typeit("lsacnsalcnlaskcn.. just kidding. hi.");
+typeit("Welcome ようこそ 어서오세요 Bienvenida ");
+
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 10) {
+  if ($(window).scrollTop() > 100) {
       $('header').addClass('nav_bar');
   } else {
       $('header').removeClass('nav_bar');
@@ -66,7 +49,7 @@ $('.main_h li a').click(function() {
 
 $('nav a').click(function(event) {
   let id = $(this).attr("href");
-   let offset = 70;
+  let offset = 70;
   let target = $(id).offset().top - offset;
   $('html, body').animate({
       scrollTop: target

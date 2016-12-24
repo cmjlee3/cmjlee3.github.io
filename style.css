@@ -1,19 +1,12 @@
-/*Basic Styling*/
-/*Css start */
-/*.clearfix::after {
-  display: block;
-  content:"";
-  clear:both;
-}*/
-
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   color: #8f8f8f;
-  background: white;
-  font-family: "Cardo", serif;
+  background: #005c3a;
+  /*font-family: "Cardo", serif;*/
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   height: 100%;
@@ -21,15 +14,6 @@ body {
 
 body header {
   height: 750px;
-}
-  /*background-size: cover;
- }
-*/
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2em;
-  line-height: 1.8;
-  text-transform: uppercase;
 }
 
 #C:hover {
@@ -91,16 +75,14 @@ p {
 
 header {
   position: fixed;
-  /*top: 0px;*/
-  max-height: 80px;
+  top: 0px;
+  max-height: 100px;
   z-index: 1;
   width: 100%;
-  padding-top: 10px;
-  background: none;
+  padding-top: 30px;
   overflow: hidden;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  opacity: 0;
   top: -100px;
   padding-bottom: 10px;
   font-family: "Montserrat", sans-serif;
@@ -112,15 +94,15 @@ header {
 }
 
 .nav_bar {
-  background-color: rgba(255, 255, 255, 0.93);
+  /*background-color: rgba(255, 255, 255, 0.93);*/
+  background-color: black;
   opacity: 1;
   top: -10px;
 }
 
 nav {
   float: left;
-  width: 50%;
-  height: 300px;
+  /*height: 300px;*/
 }
 
 nav ul {
@@ -143,7 +125,7 @@ nav ul li:hover {
 nav ul a {
   color: #888888;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .mobile-toggle {
@@ -177,36 +159,34 @@ nav ul a {
 
 }
 
-/*Top Navigation Section */
+/*Name Section */
 .name {
-  color: #black;
-  background-color: #222;
-  position: relative;
-  z-index: 1000;
-  text-align: center;
-  padding-top: 180px;
-  padding-bottom: 100px;
-  min-height: 500px;
-  letter-spacing: 2px;
   color: black;
-  font-family: "helvetica";
+  position: relative;
+  text-align: center;
+  padding-top: 20%;
+  min-height: 700px;
+  letter-spacing: 5px;
+ /* font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+*/
+    font-family: 'Playfair Display', serif;
+  line-height: 60px;
+  background:rgba(255,255,255, 0.4);
+
 /*  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;*/
 }
 
-
 .name div {
   margin: 15px;
-  font-size: 100px;
+  font-size: 120px;
   display: inline;
 }
 
 #animated_words {
   font-size: 22px;
-  color: #FAFAFA;
-  width: 600px;
-
+  color: #222;
 }
 
 #about p {
@@ -214,6 +194,9 @@ nav ul a {
   font-family: helvetica, serif;
   color: #000000;
   line-height: 1;
+  width: 38%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #about {
@@ -223,15 +206,29 @@ nav ul a {
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 30px;
-  width: 600px;
   text-align: center;
+  min-height: 550px;
+  background-color: #FAFAFA;
+}
+
+#about h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  line-height: 1.8;
+  text-transform: uppercase;
+  padding-top: 30px;
   margin: 0 auto;
+  color: #8f8f8f;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 #about p {
   padding: 15px;
+  margin-top: 50px;
+  line-height: 22px;
 }
 
 
@@ -240,39 +237,47 @@ nav ul a {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 300px;
-  /*background-color: pink;*/
-  /*-webkit-background-size: cover;
+  min-height: 380px;
+  /*background-color: gray;*/
+   /*background: url('trees.jpg') no-repeat;*/
+  -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 
-/*#video-bg-elem {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-}*/
+#video-bg-elem {
+  position: fixed;
+  display: block 100% ;
+  top: 50%;
+  left: 50%;
+  /*max-width: 100%;*/
+  width: 100%;
+  max-height: auto;
+  /*width: auto;*/
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  background: url('images/skate.png') no-repeat;
+  background-size: cover;
+}
 
-.seattle h1 {
+/*.seattle h1 {
   margin: -17%;
   margin-left: 252%;
-}
+}*/
 
 
 /*Portfolio Section Start*/
-.portfolio {
-  height: 550px;
-  width: 100%;
-  text-align: center;
-}
-
 .portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  height: 800px;
+  text-align: center;
+  /*margin-bottom: 50px;*/
+  background-color: #FAFAFA;
 }
 
 .img {
@@ -282,6 +287,7 @@ nav ul a {
 .portfolio-title {
   width: 100%;
   text-align: center;
+  margin-bottom: -180px;
 }
 
 .portfolio a {
@@ -298,25 +304,29 @@ nav ul a {
 }
 
 .portfolio h1 {
-  padding-top: 30px;
-  margin: 0 auto;
-  color: #555;
-  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -150px;
+  /*line-height: 1.8;*/
+  text-transform: uppercase;
+  color: #8f8f8f;
+  font-size: 30px;
   font-weight: bolder;
 }
 
 div.project {
+  /*display: block;*/
   font-family: 'helvetica', Arial, sans-serif;
   color: #fff;
   position: relative;
-  float: left;
+  /*float: left;*/
   overflow: hidden;
   width: 100%;
   margin: 50px 15px 50px 27px;
-  max-width: 380px;
-  max-height: 320px;
+  max-width: 400px;
+  max-height: 300px;
   background: #000000;
   text-align: center;
+  margin-top: -300px;
 }
 
 div.project * {
@@ -342,7 +352,7 @@ div.project div {
 
 div.project div::before {
   position: absolute;
-  top: 30px;
+  /*top: 30px;*/
   right: 30px;
   bottom: 30px;
   left: 100%;
@@ -368,6 +378,7 @@ div.project p {
 div.project h2 {
   word-spacing: -0.15em;
   font-weight: 300;
+  margin-top: 20%;
   text-transform: uppercase;
   -webkit-transform: translate3d(30%, 0%, 0);
   transform: translate3d(30%, 0%, 0);
@@ -377,6 +388,7 @@ div.project h2 {
 
 div.project h2 span {
   font-weight: 800;
+
 }
 
 div.project p {
@@ -404,8 +416,8 @@ div.project:hover div h2 {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 div.project:hover div p {
@@ -424,20 +436,27 @@ div.project:hover div::before {
   transition-delay: 0s;
 }
 
-.contact-section {
-  height: 350px;
-  width: 100%;
+#contact {
+  width: 30%;
   margin: 0 auto;
-  border-radius: 5px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  /*height: 500px;*/
 }
 
+/*.contact-section {
+  background:rgba(255,255,255, 0.7);
+}
+*/
 .contact-section h2 {
+  padding-top: 50px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
-  color: #222;
+  font-size: 30px;
+  color: #8f8f8f;
   font-weight: bolder;
   border-radius: 5px;
+  padding-bottom: 70px;
 }
 
 .contact-section span {
@@ -447,7 +466,7 @@ div.project:hover div::before {
   border-radius: 5px;
 }
 
-.container {
+/*.container {
   position: relative;
   width: 100%;
   padding: 1em;
@@ -460,7 +479,7 @@ div.project:hover div::before {
   text-transform: uppercase;
   color: #555;
   border-radius: 5px;
-}
+}*/
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -501,11 +520,12 @@ div.project:hover div::before {
   font-size: 20px;
   transition: .2s all ease;
   text-transform: uppercase;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 }
 
 #contact .send button[type="submit"]:hover {
   background: #FAFAFA;
+  color: #222;
 }
 
 #contact .send button[type="submit"]:focus {
@@ -517,7 +537,9 @@ div.project:hover div::before {
 footer {
   text-align: center;
   margin: 0 auto;
-  padding: 10px 0;
+  padding-left: 10px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   position: relative;
   right: 0;
   bottom: 0;
@@ -527,7 +549,7 @@ footer {
 }
 
 footer .email {
-  margin-top: 150px;
+  /*margin-top: 150px;*/
   padding-bottom: 0;
 }
 
@@ -589,6 +611,8 @@ footer .email h3 a {
 
   .bottom_half {
     display: none;
+    width: 100vw;
+    position: absolute;
   }
 
   footer {
@@ -596,3 +620,4 @@ footer .email h3 a {
   }
 
 }
+
