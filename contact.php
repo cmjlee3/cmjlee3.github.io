@@ -1,18 +1,21 @@
 <?php
+if(isset($_POST['submit'])){
+    $to = "email@example.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-if($_POST["submit"]) {
-    $recipient="your@email.address";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +27,7 @@ if($_POST["submit"]) {
   <link rel="stylesheet" href="">
 </head>
 <body>
+  echo $message;
   <h1>Thank You</h1>
   <<p>Your message has been sent.</p>
   <h1>Oops!</h1>

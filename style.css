@@ -319,7 +319,7 @@ div.project {
   color: #fff;
   position: relative;
   /*float: left;*/
-  overflow: hidden;
+  /*overflow: hidden;*/
   width: 100%;
   margin: 50px 15px 50px 27px;
   max-width: 400px;
@@ -337,6 +337,8 @@ div.project img {
   max-width: 100%;
   opacity: 1;
   width: 100%;
+  height: 250px;
+  background-image: cover;
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
@@ -348,6 +350,7 @@ div.project div {
   padding: 30px 3em;
   width: 100%;
   height: 100%;
+
 }
 
 div.project div::before {
@@ -378,7 +381,7 @@ div.project p {
 div.project h2 {
   word-spacing: -0.15em;
   font-weight: 300;
-  margin-top: 20%;
+  /*margin-top: 20%;*/
   text-transform: uppercase;
   -webkit-transform: translate3d(30%, 0%, 0);
   transform: translate3d(30%, 0%, 0);
@@ -391,8 +394,11 @@ div.project h2 span {
 
 }
 
+
+
 div.project p {
-  font-weight: 200;
+  font-size: 16px;
+  margin-top: -20px;
   -webkit-transform: translate3d(0%, 30%, 0);
   transform: translate3d(0%, 30%, 0);
   -webkit-transition-delay: 0s;

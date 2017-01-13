@@ -73,28 +73,30 @@
     </div>
 
     <div class="project">
-      <img class="img" src="trees.jpg" alt="Dots"/>
-      <div>
-        <h2><span>"Dots"</span></h2>
-        <p><br>stuff about dots</p>
-        <a href="#" target="_blank"></a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img class="img" src="trees.jpg" alt="Lyft"/>
+      <img class="img" src="lyft.png" alt="Lyft"/>
       <div>
         <h2><span>"Lyft"</span></h2>
-        <p><br>stuff about lyft</p>
-        <a href="#" target="_blank"></a>
+          <p><br>Built using MongoDB, Node.js, and Lyft and Google Map's API, this app allows users to drag pins to indicate their pick up location and destination. All ride types (lyft, lyft-line, lyft-plus) prices populate taking into account surcharge pricing.
+          </p>
+
+        <a href="https://lyftproject.herokuapp.com" target="_blank"></a>
       </div>
     </div>
 
     <div class="project">
-      <img class="img" src="trees.jpg" alt="Grojj"/>
+      <img class="img" src="travellog.png" alt="Grojj"/>
       <div>
-        <h2><span>"Grojj"</span></h2>
-        <p><br>stuff about grojj</p>
+        <h2><span>"Travel Log"</span></h2>
+        <p><br>Built using Node.js and Google Map's API, Travel Log allows users to keep track of all the destinations they've traveled to as well as a bucketlist of where they'd like to go.</p>
+        <a href="https://travellogging.herokuapp.com" target="_blank"></a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img class="img" src="trees.jpg" alt="Dots"/>
+      <div>
+        <h2><span>"Coming soon"</span></h2>
+        <p><br>...</p>
         <a href="#" target="_blank"></a>
       </div>
     </div>
@@ -103,27 +105,37 @@
 
 <!-- CONTACT: -->
   <section class="contact-section">
-    <?=$thankYou ?>
 
-    <form id="contact" action="contact.php" method="post">
+    <form action="" method="post">
+    First Name: <input type="text" name="first_name"><br>
+    Last Name: <input type="text" name="last_name"><br>
+    Email: <input type="text" name="email"><br>
+    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+    <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <!-- <form id="contact" action="contact.php" method="post">
 
     <h2>Contact me</h2>
 
     <div class="left">
-      <input type="text" placeholder="Name" name="name" />
-      <input type="text" placeholder="Email" name="email" />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name"/>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Email"/>
     </div>
 
     <div class="right">
+      <label for="comments">Message:</label>
       <textarea placeholder="Message" name="comments" required="required"></textarea>
     </div>
 
     <div class="send">
 
-      <button type="submit">Send</button>
+      <input type="submit" name="send" value="Send Message">
        <!-- <a href="mailto:cmjlee3@gmail.com">Send</a> -->
     </div>
-    </form>
+    </form> -->
 
   </section>
 
