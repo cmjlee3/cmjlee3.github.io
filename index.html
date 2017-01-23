@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cecil Lee</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rufina" rel="stylesheet">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
@@ -104,12 +104,20 @@
 <!-- CONTACT: -->
   <section class="contact-section">
 
-    <form action="" method="post">
-    First Name: <input type="text" name="first_name"><br>
-    Last Name: <input type="text" name="last_name"><br>
-    Email: <input type="text" name="email"><br>
-    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-    <input type="submit" name="submit" value="Submit">
+    <form id="contact" action="" method="post">
+
+      <div class="left">
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="text" name="email" placeholder="Email"><br>
+      </div>
+
+      <div class="right">
+        <textarea rows="5" name="message" cols="30" placeholder="Message"></textarea><br>
+      </div>
+
+      <div class="send">
+        <input type="submit" name="submit" value="Submit">
+      </div>
     </form>
 
     <!-- <form id="contact" action="contact.php" method="post">
@@ -131,7 +139,7 @@
     <div class="send">
 
       <input type="submit" name="send" value="Send Message">
-       <!-- <a href="mailto:cmjlee3@gmail.com">Send</a> -->
+
     </div>
     </form> -->
 
@@ -140,9 +148,10 @@
   <footer>
 
     <div class="email">
-      <a href="https://github.com/cmjlee3"><img src="github.zip" alt="github" target="_blank"></a>
+
+      <a href="https://github.com/cmjlee3"><img src="github.png" alt="github" target="_blank"></a>
       <a href="https://www.linkedin.com/in/cecil-lee"><img src="linkedin.png" alt="linkedin" target="_blank"></a>
-      <a href="mailto:cmjlee3@gmail.com"><img src="images/email.png" alt="email" target="_blank"></a>
+      <a href="mailto:cmjlee3@gmail.com"><img src="email.png" alt="email" target="_blank"></a>
     </div>
   </footer>
 

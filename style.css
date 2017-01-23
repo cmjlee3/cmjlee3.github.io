@@ -167,9 +167,7 @@ nav ul a {
   padding-top: 20%;
   min-height: 700px;
   letter-spacing: 5px;
- /* font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-*/
-    font-family: 'Playfair Display', serif;
+  font-family: 'Rufina', serif;
   line-height: 60px;
   background:rgba(255,255,255, 0.4);
 
@@ -394,8 +392,6 @@ div.project h2 span {
 
 }
 
-
-
 div.project p {
   font-size: 16px;
   margin-top: -20px;
@@ -543,6 +539,7 @@ div.project:hover div::before {
 footer {
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 50px;
   padding-left: 10px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -560,8 +557,9 @@ footer .email {
 }
 
 footer .email img {
-  width: 35px;
-  height: 35px;
+  width: 6%;
+  height: 6%;
+  padding: 6px;
 }
 
 footer .email h3 {
