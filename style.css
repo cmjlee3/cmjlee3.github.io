@@ -167,7 +167,8 @@ nav ul a {
   padding-top: 20%;
   min-height: 700px;
   letter-spacing: 5px;
-  font-family: 'Rufina', serif;
+  /*font-family: 'Rufina', serif;*/
+  font-family: 'Poiret One', cursive;
   line-height: 60px;
   background:rgba(255,255,255, 0.4);
 
@@ -199,10 +200,8 @@ nav ul a {
 
 #about {
   position: relative;
-  height: auto;
-  /*margin-top: 50px;*/
+  /*height: auto;*/
   width: 100%;
-  margin-bottom: 30px;
   text-align: center;
   padding-top: 90px;
   padding-bottom: 30px;
@@ -218,7 +217,7 @@ nav ul a {
   text-transform: uppercase;
   padding-top: 30px;
   margin: 0 auto;
-  color: #8f8f8f;
+  color: #222;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -236,7 +235,6 @@ nav ul a {
   left: 0;
   width: 100%;
   min-height: 380px;
-  /*background-color: gray;*/
    /*background: url('trees.jpg') no-repeat;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -306,7 +304,7 @@ nav ul a {
   margin-top: -150px;
   /*line-height: 1.8;*/
   text-transform: uppercase;
-  color: #8f8f8f;
+  color: #222;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -316,7 +314,7 @@ div.project {
   font-family: 'helvetica', Arial, sans-serif;
   color: #fff;
   position: relative;
-  /*float: left;*/
+  float: left;
   /*overflow: hidden;*/
   width: 100%;
   margin: 50px 15px 50px 27px;
@@ -325,6 +323,11 @@ div.project {
   background: #000000;
   text-align: center;
   margin-top: -300px;
+}
+
+/*TEST TEST TEST*/
+div.tech-type p{
+  color: #222;
 }
 
 div.project * {
@@ -455,7 +458,7 @@ div.project:hover div::before {
   text-align: center;
   text-transform: uppercase;
   font-size: 30px;
-  color: #8f8f8f;
+  color: #222;
   font-weight: bolder;
   border-radius: 5px;
   padding-bottom: 70px;
