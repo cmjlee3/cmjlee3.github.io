@@ -258,10 +258,20 @@ nav ul a {
   background-size: cover;
 }
 
-/*.seattle h1 {
-  margin: -17%;
-  margin-left: 252%;
-}*/
+.parallax {
+    /* The image used */
+    background-image: url("trees.jpg");
+
+    /* Set a specific height */
+    height: 70vh;
+    margin-top: -55vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*Portfolio Section Start*/
