@@ -128,7 +128,7 @@ nav ul a {
   font-family: 'Poiret One', cursive;
   letter-spacing: 5px;
   line-height: 60px;
-  min-height: 700px;
+  min-height: 750px;
   position: relative;
   padding-top: 20%;
   text-align: center;
@@ -327,6 +327,7 @@ div.project * {
 div.project img {
   background-image: cover;
   height: 250px;
+  margin-bottom: -5px;
   max-width: 100%;
   opacity: 1;
   transition: opacity 0.35s;
