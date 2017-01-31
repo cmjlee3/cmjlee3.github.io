@@ -562,7 +562,7 @@ footer .email h3 a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 766px) {
+/*@media only screen and (max-width: 766px) {
   nav {
     width: 100%;
   }
@@ -602,7 +602,68 @@ footer .email h3 a {
 
   footer {
   display: none;
+  }*/
+
+
+/*EXAMPLE SET OF MEDIA QUERIES*/
+  /*@media (max-width: 1200px) {
+  .modal-left {
+    display: none;
   }
+  .modal-right {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 15px;
+  }
+
+  .contactTextFlex {
+    padding-left: 10%;
+    padding-right: -10%;
+  }
+
+}
+
+@media (max-width: 725px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .nav-element {
+    width: 60px;
+    font-size: 10px;
+    padding-top: 7px;
+    height: 23px;
+  }
+
+  .blocks-container {
+    width: 20%;
+  }
+
+  .textFlex {
+    width: 60%;
+    padding-left: 10%;
+  }
+
+  .social-media-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+  }
+}*/
+
 
 }
 
